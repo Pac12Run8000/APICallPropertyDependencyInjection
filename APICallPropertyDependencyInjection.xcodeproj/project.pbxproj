@@ -19,6 +19,8 @@
 		0916FA742BCD9696003260FC /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA732BCD9696003260FC /* CustomErrors.swift */; };
 		0916FA762BCD972A003260FC /* BuildURLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA752BCD972A003260FC /* BuildURLConstants.swift */; };
 		0916FA782BCD9788003260FC /* AcronymList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA772BCD9788003260FC /* AcronymList.swift */; };
+		0916FA7A2BCD99A0003260FC /* LSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA792BCD99A0003260FC /* LSViewModel.swift */; };
+		0916FA7C2BCD9ACC003260FC /* ASViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA7B2BCD9ACC003260FC /* ASViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,9 @@
 		0916FA732BCD9696003260FC /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
 		0916FA752BCD972A003260FC /* BuildURLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildURLConstants.swift; sourceTree = "<group>"; };
 		0916FA772BCD9788003260FC /* AcronymList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymList.swift; sourceTree = "<group>"; };
+		0916FA792BCD99A0003260FC /* LSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSViewModel.swift; sourceTree = "<group>"; };
+		0916FA7B2BCD9ACC003260FC /* ASViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASViewModel.swift; sourceTree = "<group>"; };
+		0916FA7D2BCDA0AF003260FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,7 @@
 		0916FA502BCCD0D6003260FC /* APICallPropertyDependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				0916FA7D2BCDA0AF003260FC /* Info.plist */,
 				0916FA722BCD9683003260FC /* Utilities */,
 				0916FA672BCD9214003260FC /* Protocols */,
 				0916FA662BCD8C02003260FC /* NetworkingService */,
@@ -109,6 +115,8 @@
 		0916FA612BCCD1A7003260FC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0916FA792BCD99A0003260FC /* LSViewModel.swift */,
+				0916FA7B2BCD9ACC003260FC /* ASViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -209,6 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0916FA7C2BCD9ACC003260FC /* ASViewModel.swift in Sources */,
+				0916FA7A2BCD99A0003260FC /* LSViewModel.swift in Sources */,
 				0916FA712BCD9516003260FC /* MockNetworkingService.swift in Sources */,
 				0916FA782BCD9788003260FC /* AcronymList.swift in Sources */,
 				0916FA692BCD924D003260FC /* NetworkingServiceProtocol.swift in Sources */,
@@ -355,6 +365,7 @@
 				DEVELOPMENT_TEAM = 93TAG27MAJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = APICallPropertyDependencyInjection/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -384,6 +395,7 @@
 				DEVELOPMENT_TEAM = 93TAG27MAJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = APICallPropertyDependencyInjection/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

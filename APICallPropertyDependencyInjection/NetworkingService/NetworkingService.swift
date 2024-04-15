@@ -2,7 +2,7 @@ import Foundation
 
 final class NetworkingService:NetworkingServiceProtocol {
     public static let shared = NetworkingService()
-    private init(){}
+    init(){}
     func retrieveList(acr:String) async throws -> [String] {
         var wordList = [String]()
         guard let url = BuildURLConstants.urlForService(str: acr) else {
