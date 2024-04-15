@@ -1,7 +1,7 @@
 import Foundation
 
 final class MockNetworkingService:NetworkingServiceProtocol {
-    func retrieveList() async throws -> [String] {
+    func retrieveList(acr:String) async throws -> [String] {
         return []
     }
     

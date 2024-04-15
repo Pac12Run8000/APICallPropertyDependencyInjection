@@ -16,6 +16,9 @@
 		0916FA692BCD924D003260FC /* NetworkingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA682BCD924D003260FC /* NetworkingServiceProtocol.swift */; };
 		0916FA6F2BCD94D9003260FC /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA6E2BCD94D9003260FC /* NetworkingService.swift */; };
 		0916FA712BCD9516003260FC /* MockNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA702BCD9516003260FC /* MockNetworkingService.swift */; };
+		0916FA742BCD9696003260FC /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA732BCD9696003260FC /* CustomErrors.swift */; };
+		0916FA762BCD972A003260FC /* BuildURLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA752BCD972A003260FC /* BuildURLConstants.swift */; };
+		0916FA782BCD9788003260FC /* AcronymList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA772BCD9788003260FC /* AcronymList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		0916FA682BCD924D003260FC /* NetworkingServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceProtocol.swift; sourceTree = "<group>"; };
 		0916FA6E2BCD94D9003260FC /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		0916FA702BCD9516003260FC /* MockNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkingService.swift; sourceTree = "<group>"; };
+		0916FA732BCD9696003260FC /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
+		0916FA752BCD972A003260FC /* BuildURLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildURLConstants.swift; sourceTree = "<group>"; };
+		0916FA772BCD9788003260FC /* AcronymList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		0916FA502BCCD0D6003260FC /* APICallPropertyDependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				0916FA722BCD9683003260FC /* Utilities */,
 				0916FA672BCD9214003260FC /* Protocols */,
 				0916FA662BCD8C02003260FC /* NetworkingService */,
 				0916FA612BCCD1A7003260FC /* ViewModels */,
@@ -84,6 +91,7 @@
 		0916FA5F2BCCD142003260FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0916FA772BCD9788003260FC /* AcronymList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +128,15 @@
 				0916FA682BCD924D003260FC /* NetworkingServiceProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0916FA722BCD9683003260FC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0916FA732BCD9696003260FC /* CustomErrors.swift */,
+				0916FA752BCD972A003260FC /* BuildURLConstants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,11 +210,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0916FA712BCD9516003260FC /* MockNetworkingService.swift in Sources */,
+				0916FA782BCD9788003260FC /* AcronymList.swift in Sources */,
 				0916FA692BCD924D003260FC /* NetworkingServiceProtocol.swift in Sources */,
 				0916FA542BCCD0D6003260FC /* ContentView.swift in Sources */,
 				0916FA632BCCD261003260FC /* LSView.swift in Sources */,
 				0916FA6F2BCD94D9003260FC /* NetworkingService.swift in Sources */,
+				0916FA742BCD9696003260FC /* CustomErrors.swift in Sources */,
 				0916FA652BCCD26E003260FC /* ASView.swift in Sources */,
+				0916FA762BCD972A003260FC /* BuildURLConstants.swift in Sources */,
 				0916FA522BCCD0D6003260FC /* APICallPropertyDependencyInjectionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

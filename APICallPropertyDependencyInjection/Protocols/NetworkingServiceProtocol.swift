@@ -1,5 +1,5 @@
 import Foundation
 
 protocol NetworkingServiceProtocol {
-    func retrieveList() async throws -> [String]
+    func retrieveList(acr:String) async throws -> [String]
 }
