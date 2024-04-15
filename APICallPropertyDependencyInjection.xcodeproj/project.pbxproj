@@ -11,6 +11,11 @@
 		0916FA542BCCD0D6003260FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA532BCCD0D6003260FC /* ContentView.swift */; };
 		0916FA562BCCD0D9003260FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0916FA552BCCD0D9003260FC /* Assets.xcassets */; };
 		0916FA592BCCD0D9003260FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0916FA582BCCD0D9003260FC /* Preview Assets.xcassets */; };
+		0916FA632BCCD261003260FC /* LSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA622BCCD261003260FC /* LSView.swift */; };
+		0916FA652BCCD26E003260FC /* ASView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA642BCCD26E003260FC /* ASView.swift */; };
+		0916FA692BCD924D003260FC /* NetworkingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA682BCD924D003260FC /* NetworkingServiceProtocol.swift */; };
+		0916FA6F2BCD94D9003260FC /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA6E2BCD94D9003260FC /* NetworkingService.swift */; };
+		0916FA712BCD9516003260FC /* MockNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916FA702BCD9516003260FC /* MockNetworkingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		0916FA532BCCD0D6003260FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0916FA552BCCD0D9003260FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0916FA582BCCD0D9003260FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0916FA622BCCD261003260FC /* LSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSView.swift; sourceTree = "<group>"; };
+		0916FA642BCCD26E003260FC /* ASView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASView.swift; sourceTree = "<group>"; };
+		0916FA682BCD924D003260FC /* NetworkingServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceProtocol.swift; sourceTree = "<group>"; };
+		0916FA6E2BCD94D9003260FC /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		0916FA702BCD9516003260FC /* MockNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,12 @@
 		0916FA502BCCD0D6003260FC /* APICallPropertyDependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				0916FA672BCD9214003260FC /* Protocols */,
+				0916FA662BCD8C02003260FC /* NetworkingService */,
+				0916FA612BCCD1A7003260FC /* ViewModels */,
+				0916FA602BCCD19E003260FC /* Views */,
+				0916FA5F2BCCD142003260FC /* Models */,
 				0916FA512BCCD0D6003260FC /* APICallPropertyDependencyInjectionApp.swift */,
-				0916FA532BCCD0D6003260FC /* ContentView.swift */,
 				0916FA552BCCD0D9003260FC /* Assets.xcassets */,
 				0916FA572BCCD0D9003260FC /* Preview Content */,
 			);
@@ -65,6 +79,47 @@
 				0916FA582BCCD0D9003260FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0916FA5F2BCCD142003260FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0916FA602BCCD19E003260FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0916FA532BCCD0D6003260FC /* ContentView.swift */,
+				0916FA622BCCD261003260FC /* LSView.swift */,
+				0916FA642BCCD26E003260FC /* ASView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0916FA612BCCD1A7003260FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0916FA662BCD8C02003260FC /* NetworkingService */ = {
+			isa = PBXGroup;
+			children = (
+				0916FA6E2BCD94D9003260FC /* NetworkingService.swift */,
+				0916FA702BCD9516003260FC /* MockNetworkingService.swift */,
+			);
+			path = NetworkingService;
+			sourceTree = "<group>";
+		};
+		0916FA672BCD9214003260FC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0916FA682BCD924D003260FC /* NetworkingServiceProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0916FA712BCD9516003260FC /* MockNetworkingService.swift in Sources */,
+				0916FA692BCD924D003260FC /* NetworkingServiceProtocol.swift in Sources */,
 				0916FA542BCCD0D6003260FC /* ContentView.swift in Sources */,
+				0916FA632BCCD261003260FC /* LSView.swift in Sources */,
+				0916FA6F2BCD94D9003260FC /* NetworkingService.swift in Sources */,
+				0916FA652BCCD26E003260FC /* ASView.swift in Sources */,
 				0916FA522BCCD0D6003260FC /* APICallPropertyDependencyInjectionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

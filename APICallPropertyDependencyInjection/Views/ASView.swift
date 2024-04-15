@@ -1,24 +1,17 @@
-//
-//  ContentView.swift
-//  APICallPropertyDependencyInjection
-//
-//  Created by Norbert Grover on 4/14/24.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct ASView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("AS View")
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ASView()
 }
