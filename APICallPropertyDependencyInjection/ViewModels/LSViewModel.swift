@@ -9,7 +9,6 @@ class LSViewModel: ObservableObject {
    @MainActor
    func loadData() async throws {
        guard let networkingService = networkingService else {
-//           errorMessage = "Networking service not initialized"
            throw CustomErrors.noNetworkingService
        }
        
@@ -17,12 +16,5 @@ class LSViewModel: ObservableObject {
            throw CustomErrors.noArrayOfStrings
        }
        self.wordList = fetchedList
-//       do {
-//           let fetchedList = try await networkingService.retrieveList(acr: "ls")
-//           self.wordList = fetchedList
-//       } catch {
-//           self.errorMessage = "Failed to fetch data: \(error.localizedDescription)"
-        
-//       }
    }
 }
