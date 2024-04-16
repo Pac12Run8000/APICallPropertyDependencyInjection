@@ -16,7 +16,11 @@ struct LSView: View {
         .onAppear {
             viewModel.networkingService = NetworkingService()
             Task {
-                await viewModel.loadData()
+                do {
+                    try await viewModel.loadData()
+                } catch {
+                    print("Error:\(error.localizedDescription)")
+                }
             }
         }
     }

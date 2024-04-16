@@ -9,6 +9,7 @@ enum CustomErrors:Error {
     case noArrayOfStrings
     case noData
     case cannotDecode
+    case noNetworkingService
 }
 
 extension CustomErrors:CustomStringConvertible {
@@ -30,6 +31,8 @@ extension CustomErrors:CustomStringConvertible {
             return "There is no data"
         case .cannotDecode:
             return "Error decoding data"
+        case .noNetworkingService:
+            return "Networking Service wasn't properly instantiated"
         }
     }
 }

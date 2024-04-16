@@ -2,21 +2,27 @@ import Foundation
 
 class LSViewModel: ObservableObject {
     @Published var wordList: [String]?
-    @Published var errorMessage: String?
+    
     
     var networkingService: NetworkingServiceProtocol?
     
    @MainActor
-   func loadData() async {
+   func loadData() async throws {
        guard let networkingService = networkingService else {
-           errorMessage = "Networking service not initialized"
-           return
+//           errorMessage = "Networking service not initialized"
+           throw CustomErrors.noNetworkingService
        }
-       do {
-           let fetchedList = try await networkingService.retrieveList(acr: "ls")
-           self.wordList = fetchedList
-       } catch {
-           self.errorMessage = "Failed to fetch data: \(error.localizedDescription)"
+       
+       guard let fetchedList = try await networkingService.retrieveList(acr: "ls") as? [String] else {
+           throw CustomErrors.noArrayOfStrings
        }
+       self.wordList = fetchedList
+//       do {
+//           let fetchedList = try await networkingService.retrieveList(acr: "ls")
+//           self.wordList = fetchedList
+//       } catch {
+//           self.errorMessage = "Failed to fetch data: \(error.localizedDescription)"
+        
+//       }
    }
 }
